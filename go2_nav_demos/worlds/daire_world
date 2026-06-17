@@ -1,0 +1,527 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <light name="sun" type="directional">
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation><range>1000</range><constant>0.9</constant><linear>0.01</linear><quadratic>0.001</quadratic></attenuation>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+    <model name="ground_plane">
+      <static>1</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <surface><friction><ode><mu>100</mu><mu2>50</mu2></ode></friction></surface>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script></material>
+        </visual>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <model name="daire_0">
+      <static>true</static>
+      <pose>2.9872 0.1958 -0.001 0 0 1.6362</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_1">
+      <static>true</static>
+      <pose>2.9361 0.5840 -0.001 0 0 1.7671</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_2">
+      <static>true</static>
+      <pose>2.8347 0.9623 -0.001 0 0 1.8980</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_3">
+      <static>true</static>
+      <pose>2.6849 1.3240 -0.001 0 0 2.0289</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_4">
+      <static>true</static>
+      <pose>2.4891 1.6631 -0.001 0 0 2.1598</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_5">
+      <static>true</static>
+      <pose>2.2507 1.9738 -0.001 0 0 2.2907</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_6">
+      <static>true</static>
+      <pose>1.9738 2.2507 -0.001 0 0 2.4216</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_7">
+      <static>true</static>
+      <pose>1.6631 2.4891 -0.001 0 0 2.5525</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_8">
+      <static>true</static>
+      <pose>1.3240 2.6849 -0.001 0 0 2.6834</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_9">
+      <static>true</static>
+      <pose>0.9623 2.8347 -0.001 0 0 2.8143</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_10">
+      <static>true</static>
+      <pose>0.5840 2.9361 -0.001 0 0 2.9452</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_11">
+      <static>true</static>
+      <pose>0.1958 2.9872 -0.001 0 0 3.0761</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_12">
+      <static>true</static>
+      <pose>-0.1958 2.9872 -0.001 0 0 -3.0761</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_13">
+      <static>true</static>
+      <pose>-0.5840 2.9361 -0.001 0 0 -2.9452</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_14">
+      <static>true</static>
+      <pose>-0.9623 2.8347 -0.001 0 0 -2.8143</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_15">
+      <static>true</static>
+      <pose>-1.3240 2.6849 -0.001 0 0 -2.6834</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_16">
+      <static>true</static>
+      <pose>-1.6631 2.4891 -0.001 0 0 -2.5525</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_17">
+      <static>true</static>
+      <pose>-1.9738 2.2507 -0.001 0 0 -2.4216</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_18">
+      <static>true</static>
+      <pose>-2.2507 1.9738 -0.001 0 0 -2.2907</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_19">
+      <static>true</static>
+      <pose>-2.4891 1.6631 -0.001 0 0 -2.1598</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_20">
+      <static>true</static>
+      <pose>-2.6849 1.3240 -0.001 0 0 -2.0289</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_21">
+      <static>true</static>
+      <pose>-2.8347 0.9623 -0.001 0 0 -1.8980</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_22">
+      <static>true</static>
+      <pose>-2.9361 0.5840 -0.001 0 0 -1.7671</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_23">
+      <static>true</static>
+      <pose>-2.9872 0.1958 -0.001 0 0 -1.6362</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_24">
+      <static>true</static>
+      <pose>-2.9872 -0.1958 -0.001 0 0 -1.5053</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_25">
+      <static>true</static>
+      <pose>-2.9361 -0.5840 -0.001 0 0 -1.3744</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_26">
+      <static>true</static>
+      <pose>-2.8347 -0.9623 -0.001 0 0 -1.2435</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_27">
+      <static>true</static>
+      <pose>-2.6849 -1.3240 -0.001 0 0 -1.1126</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_28">
+      <static>true</static>
+      <pose>-2.4891 -1.6631 -0.001 0 0 -0.9817</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_29">
+      <static>true</static>
+      <pose>-2.2507 -1.9738 -0.001 0 0 -0.8508</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_30">
+      <static>true</static>
+      <pose>-1.9738 -2.2507 -0.001 0 0 -0.7199</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_31">
+      <static>true</static>
+      <pose>-1.6631 -2.4891 -0.001 0 0 -0.5890</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_32">
+      <static>true</static>
+      <pose>-1.3240 -2.6849 -0.001 0 0 -0.4581</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_33">
+      <static>true</static>
+      <pose>-0.9623 -2.8347 -0.001 0 0 -0.3272</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_34">
+      <static>true</static>
+      <pose>-0.5840 -2.9361 -0.001 0 0 -0.1963</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_35">
+      <static>true</static>
+      <pose>-0.1958 -2.9872 -0.001 0 0 -0.0654</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_36">
+      <static>true</static>
+      <pose>0.1958 -2.9872 -0.001 0 0 0.0654</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_37">
+      <static>true</static>
+      <pose>0.5840 -2.9361 -0.001 0 0 0.1963</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_38">
+      <static>true</static>
+      <pose>0.9623 -2.8347 -0.001 0 0 0.3272</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_39">
+      <static>true</static>
+      <pose>1.3240 -2.6849 -0.001 0 0 0.4581</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_40">
+      <static>true</static>
+      <pose>1.6631 -2.4891 -0.001 0 0 0.5890</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_41">
+      <static>true</static>
+      <pose>1.9738 -2.2507 -0.001 0 0 0.7199</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_42">
+      <static>true</static>
+      <pose>2.2507 -1.9738 -0.001 0 0 0.8508</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_43">
+      <static>true</static>
+      <pose>2.4891 -1.6631 -0.001 0 0 0.9817</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_44">
+      <static>true</static>
+      <pose>2.6849 -1.3240 -0.001 0 0 1.1126</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_45">
+      <static>true</static>
+      <pose>2.8347 -0.9623 -0.001 0 0 1.2435</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_46">
+      <static>true</static>
+      <pose>2.9361 -0.5840 -0.001 0 0 1.3744</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="daire_47">
+      <static>true</static>
+      <pose>2.9872 -0.1958 -0.001 0 0 1.5053</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3924 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="start_point">
+      <static>true</static>
+      <pose>3.0 0.0 -0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4 0.4 0.002</size></box></geometry>
+          <material><ambient>0 1 0 1</ambient><diffuse>0 1 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
