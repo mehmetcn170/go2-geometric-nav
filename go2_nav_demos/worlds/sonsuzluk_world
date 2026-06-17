@@ -1,0 +1,527 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <light name="sun" type="directional">
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation><range>1000</range><constant>0.9</constant><linear>0.01</linear><quadratic>0.001</quadratic></attenuation>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+    <model name="ground_plane">
+      <static>1</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <surface><friction><ode><mu>100</mu><mu2>50</mu2></ode></friction></surface>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script></material>
+        </visual>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <model name="inf_0">
+      <static>true</static>
+      <pose>3.4560 0.2227 -0.001 0 0 1.7660</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4540 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_1">
+      <static>true</static>
+      <pose>3.2902 0.6327 -0.001 0 0 2.1469</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4469 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_2">
+      <static>true</static>
+      <pose>2.9945 0.9497 -0.001 0 0 2.5012</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4340 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_3">
+      <static>true</static>
+      <pose>2.6227 1.1459 -0.001 0 0 2.8171</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4174 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_4">
+      <static>true</static>
+      <pose>2.2254 1.2229 -0.001 0 0 3.0893</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3995 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_5">
+      <static>true</static>
+      <pose>1.8379 1.2000 -0.001 0 0 -2.9662</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3819 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_6">
+      <static>true</static>
+      <pose>1.4788 1.1020 -0.001 0 0 -2.7805</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3659 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_7">
+      <static>true</static>
+      <pose>1.1538 0.9517 -0.001 0 0 -2.6333</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3522 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_8">
+      <static>true</static>
+      <pose>0.8613 0.7668 -0.001 0 0 -2.5207</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3411 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_9">
+      <static>true</static>
+      <pose>0.5956 0.5601 -0.001 0 0 -2.4393</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3327 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_10">
+      <static>true</static>
+      <pose>0.3495 0.3405 -0.001 0 0 -2.3864</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3272 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_11">
+      <static>true</static>
+      <pose>0.1152 0.1142 -0.001 0 0 -2.3605</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3244 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_12">
+      <static>true</static>
+      <pose>-0.1152 -0.1142 -0.001 0 0 -2.3605</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3244 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_13">
+      <static>true</static>
+      <pose>-0.3495 -0.3405 -0.001 0 0 -2.3864</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3272 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_14">
+      <static>true</static>
+      <pose>-0.5956 -0.5601 -0.001 0 0 -2.4393</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3327 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_15">
+      <static>true</static>
+      <pose>-0.8613 -0.7668 -0.001 0 0 -2.5207</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3411 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_16">
+      <static>true</static>
+      <pose>-1.1538 -0.9517 -0.001 0 0 -2.6333</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3522 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_17">
+      <static>true</static>
+      <pose>-1.4788 -1.1020 -0.001 0 0 -2.7805</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3659 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_18">
+      <static>true</static>
+      <pose>-1.8379 -1.2000 -0.001 0 0 -2.9662</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3819 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_19">
+      <static>true</static>
+      <pose>-2.2254 -1.2229 -0.001 0 0 3.0893</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3995 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_20">
+      <static>true</static>
+      <pose>-2.6227 -1.1459 -0.001 0 0 2.8171</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4174 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_21">
+      <static>true</static>
+      <pose>-2.9945 -0.9497 -0.001 0 0 2.5012</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4340 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_22">
+      <static>true</static>
+      <pose>-3.2902 -0.6327 -0.001 0 0 2.1469</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4469 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_23">
+      <static>true</static>
+      <pose>-3.4560 -0.2227 -0.001 0 0 1.7660</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4540 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_24">
+      <static>true</static>
+      <pose>-3.4560 0.2227 -0.001 0 0 1.3756</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4540 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_25">
+      <static>true</static>
+      <pose>-3.2902 0.6327 -0.001 0 0 0.9947</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4469 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_26">
+      <static>true</static>
+      <pose>-2.9945 0.9497 -0.001 0 0 0.6404</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4340 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_27">
+      <static>true</static>
+      <pose>-2.6227 1.1459 -0.001 0 0 0.3244</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4174 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_28">
+      <static>true</static>
+      <pose>-2.2254 1.2229 -0.001 0 0 0.0523</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3995 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_29">
+      <static>true</static>
+      <pose>-1.8379 1.2000 -0.001 0 0 -0.1754</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3819 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_30">
+      <static>true</static>
+      <pose>-1.4788 1.1020 -0.001 0 0 -0.3611</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3659 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_31">
+      <static>true</static>
+      <pose>-1.1538 0.9517 -0.001 0 0 -0.5083</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3522 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_32">
+      <static>true</static>
+      <pose>-0.8613 0.7668 -0.001 0 0 -0.6209</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3411 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_33">
+      <static>true</static>
+      <pose>-0.5956 0.5601 -0.001 0 0 -0.7023</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3327 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_34">
+      <static>true</static>
+      <pose>-0.3495 0.3405 -0.001 0 0 -0.7551</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3272 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_35">
+      <static>true</static>
+      <pose>-0.1152 0.1142 -0.001 0 0 -0.7811</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3244 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_36">
+      <static>true</static>
+      <pose>0.1152 -0.1142 -0.001 0 0 -0.7811</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3244 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_37">
+      <static>true</static>
+      <pose>0.3495 -0.3405 -0.001 0 0 -0.7551</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3272 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_38">
+      <static>true</static>
+      <pose>0.5956 -0.5601 -0.001 0 0 -0.7023</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3327 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_39">
+      <static>true</static>
+      <pose>0.8613 -0.7668 -0.001 0 0 -0.6209</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3411 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_40">
+      <static>true</static>
+      <pose>1.1538 -0.9517 -0.001 0 0 -0.5083</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3522 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_41">
+      <static>true</static>
+      <pose>1.4788 -1.1020 -0.001 0 0 -0.3611</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3659 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_42">
+      <static>true</static>
+      <pose>1.8379 -1.2000 -0.001 0 0 -0.1754</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3819 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_43">
+      <static>true</static>
+      <pose>2.2254 -1.2229 -0.001 0 0 0.0523</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3995 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_44">
+      <static>true</static>
+      <pose>2.6227 -1.1459 -0.001 0 0 0.3244</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4174 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_45">
+      <static>true</static>
+      <pose>2.9945 -0.9497 -0.001 0 0 0.6404</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4340 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_46">
+      <static>true</static>
+      <pose>3.2902 -0.6327 -0.001 0 0 0.9947</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4469 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="inf_47">
+      <static>true</static>
+      <pose>3.4560 -0.2227 -0.001 0 0 1.3756</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4540 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="start_point">
+      <static>true</static>
+      <pose>0.0 0.0 -0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4 0.4 0.002</size></box></geometry>
+          <material><ambient>0 1 0 1</ambient><diffuse>0 1 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
