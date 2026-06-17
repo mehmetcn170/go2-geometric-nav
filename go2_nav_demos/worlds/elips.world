@@ -1,0 +1,532 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <light name="sun" type="directional">
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.5 -1</direction>
+    </light>
+    <model name="ground_plane">
+      <static>1</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <surface><friction><ode><mu>100</mu><mu2>50</mu2></ode></friction></surface>
+        </collision>
+        <visual name="visual">
+          <cast_shadows>0</cast_shadows>
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Grey</name>
+          </script></material>
+        </visual>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <model name="elips_0">
+      <static>true</static>
+      <pose>3.9829 0.1632 -0.001 0 0 1.6753</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3281 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_1">
+      <static>true</static>
+      <pose>3.9147 0.4867 -0.001 0 0 1.8789</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3366 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_2">
+      <static>true</static>
+      <pose>3.7796 0.8019 -0.001 0 0 2.0683</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3524 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_3">
+      <static>true</static>
+      <pose>3.5798 1.1034 -0.001 0 0 2.2388</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3736 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_4">
+      <static>true</static>
+      <pose>3.3188 1.3860 -0.001 0 0 2.3896</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3980 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_5">
+      <static>true</static>
+      <pose>3.0009 1.6448 -0.001 0 0 2.5224</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4236 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_6">
+      <static>true</static>
+      <pose>2.6317 1.8756 -0.001 0 0 2.6402</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4486 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_7">
+      <static>true</static>
+      <pose>2.2175 2.0742 -0.001 0 0 2.7460</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4715 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_8">
+      <static>true</static>
+      <pose>1.7654 2.2374 -0.001 0 0 2.8426</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4911 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_9">
+      <static>true</static>
+      <pose>1.2830 2.3623 -0.001 0 0 2.9325</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5065 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_10">
+      <static>true</static>
+      <pose>0.7787 2.4467 -0.001 0 0 3.0179</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5171 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_11">
+      <static>true</static>
+      <pose>0.2611 2.4893 -0.001 0 0 3.1007</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5225 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_12">
+      <static>true</static>
+      <pose>-0.2611 2.4893 -0.001 0 0 -3.1007</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5225 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_13">
+      <static>true</static>
+      <pose>-0.7787 2.4467 -0.001 0 0 -3.0179</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5171 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_14">
+      <static>true</static>
+      <pose>-1.2830 2.3623 -0.001 0 0 -2.9325</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5065 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_15">
+      <static>true</static>
+      <pose>-1.7654 2.2374 -0.001 0 0 -2.8426</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4911 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_16">
+      <static>true</static>
+      <pose>-2.2175 2.0742 -0.001 0 0 -2.7460</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4715 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_17">
+      <static>true</static>
+      <pose>-2.6317 1.8756 -0.001 0 0 -2.6402</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4486 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_18">
+      <static>true</static>
+      <pose>-3.0009 1.6448 -0.001 0 0 -2.5224</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4236 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_19">
+      <static>true</static>
+      <pose>-3.3188 1.3860 -0.001 0 0 -2.3896</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3980 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_20">
+      <static>true</static>
+      <pose>-3.5798 1.1034 -0.001 0 0 -2.2388</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3736 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_21">
+      <static>true</static>
+      <pose>-3.7796 0.8019 -0.001 0 0 -2.0683</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3524 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_22">
+      <static>true</static>
+      <pose>-3.9147 0.4867 -0.001 0 0 -1.8789</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3366 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_23">
+      <static>true</static>
+      <pose>-3.9829 0.1632 -0.001 0 0 -1.6753</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3281 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_24">
+      <static>true</static>
+      <pose>-3.9829 -0.1632 -0.001 0 0 -1.4663</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3281 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_25">
+      <static>true</static>
+      <pose>-3.9147 -0.4867 -0.001 0 0 -1.2627</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3366 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_26">
+      <static>true</static>
+      <pose>-3.7796 -0.8019 -0.001 0 0 -1.0732</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3524 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_27">
+      <static>true</static>
+      <pose>-3.5798 -1.1034 -0.001 0 0 -0.9028</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3736 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_28">
+      <static>true</static>
+      <pose>-3.3188 -1.3860 -0.001 0 0 -0.7520</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3980 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_29">
+      <static>true</static>
+      <pose>-3.0009 -1.6448 -0.001 0 0 -0.6192</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4236 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_30">
+      <static>true</static>
+      <pose>-2.6317 -1.8756 -0.001 0 0 -0.5014</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4486 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_31">
+      <static>true</static>
+      <pose>-2.2175 -2.0742 -0.001 0 0 -0.3956</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4715 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_32">
+      <static>true</static>
+      <pose>-1.7654 -2.2374 -0.001 0 0 -0.2990</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4911 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_33">
+      <static>true</static>
+      <pose>-1.2830 -2.3623 -0.001 0 0 -0.2091</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5065 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_34">
+      <static>true</static>
+      <pose>-0.7787 -2.4467 -0.001 0 0 -0.1237</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5171 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_35">
+      <static>true</static>
+      <pose>-0.2611 -2.4893 -0.001 0 0 -0.0409</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5225 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_36">
+      <static>true</static>
+      <pose>0.2611 -2.4893 -0.001 0 0 0.0409</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5225 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_37">
+      <static>true</static>
+      <pose>0.7787 -2.4467 -0.001 0 0 0.1237</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5171 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_38">
+      <static>true</static>
+      <pose>1.2830 -2.3623 -0.001 0 0 0.2091</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.5065 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_39">
+      <static>true</static>
+      <pose>1.7654 -2.2374 -0.001 0 0 0.2990</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4911 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_40">
+      <static>true</static>
+      <pose>2.2175 -2.0742 -0.001 0 0 0.3956</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4715 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_41">
+      <static>true</static>
+      <pose>2.6317 -1.8756 -0.001 0 0 0.5014</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4486 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_42">
+      <static>true</static>
+      <pose>3.0009 -1.6448 -0.001 0 0 0.6192</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4236 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_43">
+      <static>true</static>
+      <pose>3.3188 -1.3860 -0.001 0 0 0.7520</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3980 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_44">
+      <static>true</static>
+      <pose>3.5798 -1.1034 -0.001 0 0 0.9028</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3736 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_45">
+      <static>true</static>
+      <pose>3.7796 -0.8019 -0.001 0 0 1.0732</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3524 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_46">
+      <static>true</static>
+      <pose>3.9147 -0.4867 -0.001 0 0 1.2627</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3366 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="elips_47">
+      <static>true</static>
+      <pose>3.9829 -0.1632 -0.001 0 0 1.4663</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.3281 0.12 0.002</size></box></geometry>
+          <material><ambient>1 0.85 0 1</ambient><diffuse>1 0.85 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+    <model name="start_point">
+      <static>true</static>
+      <pose>4.0 0.0 -0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.4 0.4 0.002</size></box></geometry>
+          <material><ambient>0 1 0 1</ambient><diffuse>0 1 0 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
