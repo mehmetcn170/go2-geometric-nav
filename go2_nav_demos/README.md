@@ -28,7 +28,11 @@ go2_nav_demos/
 │   ├── elips_tur.py          # ✅ Elips yörünge (tamamlandı)
 │   └── sonsuzluk_tur.py      # ✅ Sonsuzluk (∞ / lemniskat) yörüngesi (tamamlandı)
 ├── media/
-│   └── kare_tur.mp4          # Demo video
+│   ├── kare_tur.mp4          # Demo video
+│   ├── kare_harita.png       # Kare rota haritası (üstten görünüm)
+│   ├── daire_harita.png      # Daire pisti haritası
+│   ├── elips_harita.png      # Elips haritası (MATLAB, waypoint detaylı)
+│   └── sonsuzluk_harita.jpeg # Sonsuzluk (∞) yolu Gazebo World görselleştirmesi
 └── README.md
 ```
 
@@ -95,6 +99,8 @@ Robot, 5×5 m karenin 4 köşesini sırayla ziyaret eder.
 | İleri hız | 0.4 m/s (max, mesafeye oransal) |
 | Hedef toleransı | 0.2 m |
 
+![Kare Rota Haritası](media/kare_harita.png)
+
 ---
 
 ### 〇 Daire Turu (`daire_tur.py`)
@@ -113,6 +119,8 @@ y(t) = r·sin(t)        t ∈ [0, 2π)
 | Tur sayısı | 3 | |
 | İleri hız | 0.35 m/s (sabit) | |
 | Hedef toleransı | 0.5 m (başlangıçta 0.3 m) | |
+
+![Daire Pisti Haritası](media/daire_harita.png)
 
 ---
 
@@ -134,6 +142,8 @@ y(t) = b·sin(t)        t ∈ [0, 2π)
 | İleri hız | 0.4 m/s (max, mesafeye oransal) | |
 | Hedef toleransı | 0.25 m | |
 
+![Elips Haritası](media/elips_harita.png)
+
 ---
 
 ### ♾️ Sonsuzluk Turu (`sonsuzluk_tur.py`)
@@ -152,6 +162,8 @@ y(t) = a·sin(t)·cos(t) / (1+sin²(t))       t ∈ [0, 2π)
 | Tur sayısı | 3 | |
 | İleri hız | 0.4 m/s (max, mesafeye oransal) | |
 | Hedef toleransı | 0.35 m (merkeze yakın noktalarda 0.5 m) | |
+
+![Sonsuzluk Yolu Haritası](media/sonsuzluk_harita.jpeg)
 
 ---
 
